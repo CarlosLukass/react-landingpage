@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ title, description, cta }) => {
 	return (
 		<div className="card mx-auto mt-2 p-0" style={{ width: 17 + "rem" }}>
 			<img
@@ -9,13 +9,10 @@ const Card = () => {
 				alt="..."
 			/>
 			<div className="card-body">
-				<h5 className="card-title">Card title</h5>
-				<p className="card-text">
-					Some quick example text to build on the card title and make
-					up the bulk of the card's content.
-				</p>
+				<h5 className="card-title">{title}</h5>
+				<p className="card-text">{description}</p>
 				<a href="#" className="btn btn-primary">
-					Go somewhere
+					{cta}
 				</a>
 			</div>
 		</div>
