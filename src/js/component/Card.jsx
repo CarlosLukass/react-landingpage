@@ -1,13 +1,9 @@
 import React from "react";
 
-const Card = ({ title, description, cta }) => {
+const Card = ({ title, description, cta, image }) => {
 	return (
 		<div className="card mx-auto mt-2 p-0" style={{ width: 17 + "rem" }}>
-			<img
-				src="https://camikids.com/wp-content/uploads/2020/08/placeholder.png"
-				className="card-img-top"
-				alt="..."
-			/>
+			<img src={image} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
 				<p className="card-text">{description}</p>
